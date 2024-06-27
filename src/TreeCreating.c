@@ -40,7 +40,8 @@ static void FixHeight(Node *node)
     if (leftHeight > rightHeight)
     {
         node->height = leftHeight + 1;
-    } else
+    } 
+    else
     {
         node->height = rightHeight + 1;
     }
@@ -102,7 +103,8 @@ Node *TreeAdd (Node *tree, Data data, MemoryBuffer *t_pointer)
     if (data < tree->data)
     {
         tree->left = TreeAdd(tree->left, data, t_pointer);
-    } else
+    }
+    else
     {
         tree->right = TreeAdd(tree->right, data, t_pointer);
     }
