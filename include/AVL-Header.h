@@ -3,14 +3,16 @@
 
 typedef int Data;
 
-typedef struct Node {
+typedef struct Node
+{
     char height;
     Data data;
     struct Node *left;
     struct Node *right;
 } Node;
 
-typedef struct MemoryBuffer {
+typedef struct MemoryBuffer
+{
     int n;
     int counter;
     void *memory;
